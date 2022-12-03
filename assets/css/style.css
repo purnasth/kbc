@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
 @font-face {
   font-family: purna;
-  src: url(/assets/fonts/ProcrastinatingPixie-WyVOO.ttf);
+  src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
 }
 ::-webkit-scrollbar {
   width: 0.5vw;
@@ -68,7 +68,7 @@ header {
   height: 100%;
   /* background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg)
       no-repeat 50% 50%; */
-  background: url("/assets/img/Kathmandu-Bernhardt-College-Kathmandu_auto_x2.webp")
+  background: url("../img/Kathmandu-Bernhardt-College-Kathmandu_auto_x2.webp")
     top no-repeat;
   /* background: url("https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/295549021_144450811557139_7563158369911696010_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=X1gV-HS07FUAX-YJAkl&_nc_ht=scontent.fktm10-1.fna&oh=00_AfBaPcha9CCP0kcUeeY62N-cxh42o8ZkiOE80NhZqJ552w&oe=638BD7AD")
     top no-repeat; */
