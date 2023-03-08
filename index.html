@@ -29,6 +29,21 @@
       href="assets/img/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+
+    <!-- Links for gallery -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -70,60 +85,24 @@
         <div class="text-wrap"></div>
       </div>
     </div>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#myNavbar"
-              >
-                <!-- <i class="bi bi-list-stars"></i> -->
-                <i class="bi bi-list"></i>
-              </button>
-              <a class="navbar-brand" href="#">KBC IT CLUB</a>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <div class="nav-menu col-md-8">
-              <ul class="nav navbar-nav">
-                <!-- <li class="active"><a href="#">Home</a></li> -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Registration</a></li>
-                <!-- <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                    >Page 1 <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Page 1-1</a></li>
-                    <li><a href="#">Page 1-2</a></li>
-                    <li><a href="#">Page 1-3</a></li>
-                  </ul>
-                </li> -->
-                <li><a href="#">About</a></li>
-                <li><a href="#">Members</a></li>
-              </ul>
-            </div>
-            <div class="col-md-2 sign-content">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#"
-                    ><span class="glyphicon glyphicon-user"></span> Sign Up</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="glyphicon glyphicon-log-in"></span> Login</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+    <nav class="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkBtn">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </label>
+      <a href="#" class="logo">
+        <img src="assets/img/KBC.png" alt="logo" />
+      </a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#">Footer</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
     <div id="scroll-animate">
@@ -180,11 +159,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="content-popup">
-                  <div class="buttons">
-                    <div id="five" class="button check-btn">Click Here</div>
-                  </div>
-                </div> -->
                 <div class="content-popup">
                   <div class="buttons">
                     <div id="five" class="button check-btn">
@@ -249,14 +223,196 @@
                     </div>
                   </div>
                 </div>
-                <!-- <button class="check-btn">Hello</button> -->
               </h1>
             </div>
           </header>
 
-          <section class="content">
-            <h1>Content</h1>
-          </section>
+          <main class="content" id="content">
+            <section id="about-us">
+              <h1>About Us</h1>
+            </section>
+
+            <section id="gallery">
+              <div class="filters filter-button-group">
+                <ul>
+                  <li class="active">
+                    <a href="javascript:void(0);" data-filter="*">All</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" data-filter="bike">Bike</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" data-filter="bus">Bus</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" data-filter="car">Car</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="container" class="isotope">
+                <div class="grid-item" data-filter="bike">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1WcNDZ4BGtgDsJF7guFJBqdsjOi28sTsk&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1WcNDZ4BGtgDsJF7guFJBqdsjOi28sTsk&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bike</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1x1Ci8s3_dKgRVqqRfDao52wLqGoumKdB&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1x1Ci8s3_dKgRVqqRfDao52wLqGoumKdB&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+
+                <div class="grid-item" data-filter="bike">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1Izd6KrrgNXGmAV7QgQRpd7WTM-AfkE6x&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1Izd6KrrgNXGmAV7QgQRpd7WTM-AfkE6x&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bike</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=14EqC2fP0xhNfpHmjb3CO_Ax8pe28NJU9&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=14EqC2fP0xhNfpHmjb3CO_Ax8pe28NJU9&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+
+                <div class="grid-item" data-filter="bike">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1WcNDZ4BGtgDsJF7guFJBqdsjOi28sTsk&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1WcNDZ4BGtgDsJF7guFJBqdsjOi28sTsk&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bike</div>
+                </div>
+
+                <div class="grid-item" data-filter="bus">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1xBNwn9Sgedoy3sAVrfuDPYNgl-ArlVaZ&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1xBNwn9Sgedoy3sAVrfuDPYNgl-ArlVaZ&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bus</div>
+                </div>
+
+                <div class="grid-item" data-filter="bus">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1Ivon_-3UVc12r7mGE4yZGQmpFRLFSAxN&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1Ivon_-3UVc12r7mGE4yZGQmpFRLFSAxN&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bus</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1nbj7i05X8K2b0nIgRUnHdSBGqoUraWOB&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1nbj7i05X8K2b0nIgRUnHdSBGqoUraWOB&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+
+                <div class="grid-item" data-filter="bus">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1boYRgRrvvhY0-mVfMCnns11djZXty3b1&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1boYRgRrvvhY0-mVfMCnns11djZXty3b1&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bus</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=14s8TliUaHoqzP8q9xbmMBpeJYJzDo_Gf&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=14s8TliUaHoqzP8q9xbmMBpeJYJzDo_Gf&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1Oz_eSTCmx7Zbwv6grFF7PtZPZDzZ_XPP&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1Oz_eSTCmx7Zbwv6grFF7PtZPZDzZ_XPP&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+
+                <div class="grid-item" data-filter="bike">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1n7ZtvxDX6HpmCFJ6c0HhpeplMmLRBcou&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1n7ZtvxDX6HpmCFJ6c0HhpeplMmLRBcou&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Bike</div>
+                </div>
+
+                <div class="grid-item" data-filter="car">
+                  <a
+                    class="popupimg"
+                    href="https://drive.google.com/u/0/uc?id=1ihVEiYj1bkklzozNfd89jTf8BAeLfZ-t&export=download"
+                  >
+                    <img
+                      src="https://drive.google.com/u/0/uc?id=1ihVEiYj1bkklzozNfd89jTf8BAeLfZ-t&export=download"
+                    />
+                  </a>
+                  <div class="overlay">Car</div>
+                </div>
+              </div>
+
+              <div
+                class="isotope-pager"
+                style="padding-top: 15px; text-align: center"
+              ></div>
+            </section>
+          </main>
 
           <footer>
             <h1>Footer</h1>
@@ -265,17 +421,21 @@
       </div>
     </div>
 
-    <!-- Links -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+    <!-- Links for gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <!-- Links for preloader -->
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
 
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
