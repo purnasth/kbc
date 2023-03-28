@@ -285,3 +285,22 @@ $(document).ready(function () {
     },
   });
 });
+
+
+
+
+
+
+let title = document.getElementById("text-title");
+
+window.addEventListener("scroll", () => {
+  let value = window.scrollY;
+
+  title.style.marginTop = value * 1 + "px";
+  // title.style.left = value * -1.5 + "px";
+
+});
+
+console.log(
+  "I have a problem with the code above. I want to make the leaf move to the right and the tree move to the left. But when I add the code for the tree, the leaf stops moving to the right. I don't know why. Can someone help me?"
+);
